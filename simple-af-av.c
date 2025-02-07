@@ -10,7 +10,7 @@ Database mkdatabase(int16 cap) {
 	size = cap * sizeof(Entry);
 	p = (Entry*)malloc($i size);
 	assert(p);
-	zero($c p, size);
+	zero($1  p, size);
 	db.entries = p;
 	return db;
 
