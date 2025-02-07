@@ -4,7 +4,7 @@ ldflags=-lbu
 all: clean simple-av
 simple-av: simple-av.o
 	$(CC) $(flags) $^ -o $@ $(ldflags)
-simple-av.o: simple-av.c simple-av.h
+simple-av.o: simple-af-av.c simple-af-av.h
 	$(CC) $(flags) -c $< 
 clean:
 	rm -f *.o simple-av
